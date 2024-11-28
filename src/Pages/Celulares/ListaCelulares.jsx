@@ -119,6 +119,7 @@ const ListaCelulares = () => {
                         </FormControl>
                     </div>
                     <div className='overflow-auto flex flex-1 w-full'>
+                        <div className='w-full'>
                         <Table size='small' stickyHeader>
                             <TableHead className='bg-gray-200'>
                                 <TableRow>
@@ -228,6 +229,7 @@ const ListaCelulares = () => {
                                 )}
                             </TableBody>
                         </Table>
+                        </div>
                     </div>
                 </div>
                 <UpdCelulares data={SelectedCelular} set={setSelectedCelular} FetchCelulares={FetchCelulares} />
