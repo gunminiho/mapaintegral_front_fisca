@@ -1,0 +1,280 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "Puntos": "OVALO ZARATE (AV. PROCERES DE LA INDEPENDENCIA - AV. MALECON CHECA)",
+            "Latitud": -12.03196256,
+            "Longitud": -77.01197053
+        },
+        {
+            "id": "2",
+            "Puntos": "AV. PROCERES DE LA INDEPENDENCIA - ESTACION CAJA DE AGUA (LADO NORTE)",
+            "Latitud": -12.02771477,
+            "Longitud": -77.01136372
+        },
+        {
+            "id": "3",
+            "Puntos": "AV. PROCERES DE LA INDEPENDENCIA - CA. EL TUMI",
+            "Latitud": -12.0277479,
+            "Longitud": -77.01095695
+        },
+        {
+            "id": "4",
+            "Puntos": "AV. GRAN CHIMU - CA. EL TUMI",
+            "Latitud": -12.0280084,
+            "Longitud": -77.01022436
+        },
+        {
+            "id": "5",
+            "Puntos": "AV. GRAN CHIMU - AV. PIRAMIDE DEL SOL",
+            "Latitud": -12.02572758,
+            "Longitud": -77.00180912
+        },
+        {
+            "id": "6",
+            "Puntos": "AV. GRAN CHIMU - JR. CHINCHAYSUYO",
+            "Latitud": -12.02538388,
+            "Longitud": -77.00037719
+        },
+        {
+            "id": "7",
+            "Puntos": "AV. PIRAMIDE DEL SOL - AV. MALECON CHECA",
+            "Latitud": -12.02768982,
+            "Longitud": -77.00118321
+        },
+        {
+            "id": "8",
+            "Puntos": "JR. CHINCHAYSUYO - AV. MALECON CHECA",
+            "Latitud": -12.02736836,
+            "Longitud": -76.99987103
+        },
+        {
+            "id": "9",
+            "Puntos": "AV. GRAN CHIMU - AV. PORTADA DEL SOL",
+            "Latitud": -12.02453409,
+            "Longitud": -76.99663416
+        },
+        {
+            "id": "10",
+            "Puntos": "AV. GRAN CHIMU - AV. LAS LOMAS",
+            "Latitud": -12.02438494,
+            "Longitud": -76.99126902
+        },
+        {
+            "id": "11",
+            "Puntos": "JR. CAJAMARQUILLA - AV. LAS LOMAS",
+            "Latitud": -12.02227047,
+            "Longitud": -76.99149735
+        },
+        {
+            "id": "12",
+            "Puntos": "AV. PRINCIPAL - AV. CIRCUNVALACION",
+            "Latitud": -12.02408378,
+            "Longitud": -76.97595978
+        },
+        {
+            "id": "13",
+            "Puntos": "AV. LURIGANCHO - AV. PROCERES DE LA INDEPENDENCIA",
+            "Latitud": -12.01811101,
+            "Longitud": -77.00250646
+        },
+        {
+            "id": "14",
+            "Puntos": "AV. LURIGANCHO - AV. PIRAMIDE DEL SOL",
+            "Latitud": -12.01807835,
+            "Longitud": -77.00191876
+        },
+        {
+            "id": "15",
+            "Puntos": "AV. LURIGANCHO - JR. CHINCHAYSUYO",
+            "Latitud": -12.01771053,
+            "Longitud": -77.00098705
+        },
+        {
+            "id": "16",
+            "Puntos": "AV. LURIGANCHO - AV. PORTADA DEL SOL",
+            "Latitud": -12.01699949,
+            "Longitud": -76.99905129
+        },
+        {
+            "id": "17",
+            "Puntos": "AV. LURIGANCHO - AV. 13 DE ENERO",
+            "Latitud": -12.01682725,
+            "Longitud": -76.99716504
+        },
+        {
+            "id": "18",
+            "Puntos": "AV. PROCERES DE LA INDEPENDENCIA - AV. LOS TUSILAGOS (LADO SUR)",
+            "Latitud": -12.01325697,
+            "Longitud": -77.00171709
+        },
+        {
+            "id": "19",
+            "Puntos": "AV. PROCERES DE LA INDEPENDENCIA - AV. LOS TUSILAGOS (LADO NORTE)",
+            "Latitud": -12.01313357,
+            "Longitud": -77.00231053
+        },
+        {
+            "id": "20",
+            "Puntos": "AV. LAS FLORES DE LA PRIMAVERA - AV. LOS TUSILAGOS",
+            "Latitud": -12.01241295,
+            "Longitud": -77.01137167
+        },
+        {
+            "id": "21",
+            "Puntos": "AV. PROCERES DE LA INDEPENDENCIA - AV. LOS JARDINES (LADO SUR)",
+            "Latitud": -12.00572502,
+            "Longitud": -77.00582437
+        },
+        {
+            "id": "22",
+            "Puntos": "AV. PROCERES DE LA INDEPENDENCIA - AV. LOS JARDINES (LADO NORTE)",
+            "Latitud": -12.00622976,
+            "Longitud": -77.00618523
+        },
+        {
+            "id": "23",
+            "Puntos": "AV. 13 DE ENERO - AV. LOS JARDINES",
+            "Latitud": -12.00397681,
+            "Longitud": -77.00229757
+        },
+        {
+            "id": "24",
+            "Puntos": "AV. LOS JARDINES - AV. SANTA ROSA DE LIMA",
+            "Latitud": -12.0027367,
+            "Longitud": -76.99890795
+        },
+        {
+            "id": "25",
+            "Puntos": "AV. PROCERES DE LA INDEPENDENCIA - AV. LOS POSTES (LADO SUR)",
+            "Latitud": -11.99700098,
+            "Longitud": -77.00940593
+        },
+        {
+            "id": "26",
+            "Puntos": "AV. PROCERES DE LA INDEPENDENCIA - AV. LOS POSTES (LADO NORTE)",
+            "Latitud": -11.99742817,
+            "Longitud": -77.00989329
+        },
+        {
+            "id": "27",
+            "Puntos": "AV. LOS POSTES - AV. 13 DE ENERO",
+            "Latitud": -11.99614264,
+            "Longitud": -77.00509602
+        },
+        {
+            "id": "28",
+            "Puntos": "AV. SANTA ROSA DE LIMA - AV. LOS POSTES",
+            "Latitud": -11.9962296,
+            "Longitud": -77.00073024
+        },
+        {
+            "id": "29",
+            "Puntos": "AV. PROCERES DE LA INDEPENDENCIA - AV. SAN HILARION (LADO SUR)",
+            "Latitud": -11.9933048,
+            "Longitud": -77.010555
+        },
+        {
+            "id": "30",
+            "Puntos": "AV. PROCERES DE LA INDEPENDENCIA - AV. SAN HILARION (LADO NORTE)",
+            "Latitud": -11.99382737,
+            "Longitud": -77.01094968
+        },
+        {
+            "id": "31",
+            "Puntos": "AV. PROCERES DE LA INDEPENDENCIA - AV. JORGE BASADRE (LADO SUR)",
+            "Latitud": -11.9897848,
+            "Longitud": -77.01042935
+        },
+        {
+            "id": "32",
+            "Puntos": "AV. PROCERES DE LA INDEPENDENCIA - AV. JORGE BASADRE (LADO NORTE)",
+            "Latitud": -11.98972426,
+            "Longitud": -77.01095842
+        },
+        {
+            "id": "33",
+            "Puntos": "AV. JORGE BASADRE - AV. 13 DE ENERO",
+            "Latitud": -11.99017696,
+            "Longitud": -77.00485939
+        },
+        {
+            "id": "34",
+            "Puntos": "AV. JORGE BASADRE - AV. 13 DE ENERO",
+            "Latitud": -11.99036316,
+            "Longitud": -77.00518216
+        },
+        {
+            "id": "35",
+            "Puntos": "AV. PROCERES DE LA INDEPENDENCIA - AV. EL SOL (NORTE)",
+            "Latitud": -11.98488391,
+            "Longitud": -77.00698986
+        },
+        {
+            "id": "36",
+            "Puntos": "AV. PROCERES DE LA INDEPENDENCIA - AV. EL SOL (SUR)",
+            "Latitud": -11.98478929,
+            "Longitud": -77.00653088
+        },
+        {
+            "id": "37",
+            "Puntos": "AV. PROCERES DE LA INDEPENDENCIA - AV. CANTO REY (SUR)",
+            "Latitud": -11.97503787,
+            "Longitud": -77.00005866
+        },
+        {
+            "id": "38",
+            "Puntos": "AV. PROCERES DE LA INDEPENDENCIA - AV. CANTO REY (NORTE)",
+            "Latitud": -11.9747712,
+            "Longitud": -77.00047053
+        },
+        {
+            "id": "39",
+            "Puntos": "AV. PROCERES DE LA INDEPENDENCIA - AV. SAN MARTIN (NORTE)",
+            "Latitud": -11.97205737,
+            "Longitud": -76.99678073
+        },
+        {
+            "id": "40",
+            "Puntos": "AV. PROCERES DE LA INDEPENDENCIA - AV. SAN MARTIN (SUR)",
+            "Latitud": -11.97213854,
+            "Longitud": -76.99639768
+        },
+        {
+            "id": "41",
+            "Puntos": "AV. SAN MARTIN - AV. CANTO GRANDE",
+            "Latitud": -11.96815166,
+            "Longitud": -77.00403827
+        },
+        {
+            "id": "42",
+            "Puntos": "AV. PROCERES DE LA INDEPENDENCIA - AV. SANTA ROSA DE LIMA (SUR)",
+            "Latitud": -11.9688515,
+            "Longitud": -76.99377513
+        },
+        {
+            "id": "43",
+            "Puntos": "AV. PROCERES DE LA INDEPENDENCIA - AV. SANTA ROSA DE LIMA (NORTE)",
+            "Latitud": -11.96874674,
+            "Longitud": -76.99421551
+        },
+        {
+            "id": "44",
+            "Puntos": "AV. PROCERES DE LA INDEPENDENCIA - AV. HEROES DEL CENEPA (SUR)",
+            "Latitud": -11.95876813,
+            "Longitud": -76.98658271
+        },
+        {
+            "id": "45",
+            "Puntos": "AV. PROCERES DE LA INDEPENDENCIA - AV. HEROES DEL CENEPA (NORTE)",
+            "Latitud": -11.95883258,
+            "Longitud": -76.98716705
+        },
+        {
+            "id": "46",
+            "Puntos": "AV. PROCERES DE LA INDEPENDENCIA - AV. EL MURO",
+            "Latitud": -11.94769014,
+            "Longitud": -76.98470784
+        }
+    ]
+}

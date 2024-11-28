@@ -1,0 +1,44 @@
+{
+    "data":[
+     {
+      "Nombre": "Comisaría Zárate",
+      "Latitud": -12.0264995080193,
+      "Longitud": -77.0017429635622
+     },
+     {
+      "Nombre": "Comisaría Santa Elizabeth",
+      "Latitud": -11.9838375777752,
+      "Longitud": -77.015232854361
+     },
+     {
+      "Nombre": "Comisaría Bayovar",
+      "Latitud": -11.9523865938056,
+      "Longitud": -76.9918493633034
+     },
+     {
+      "Nombre": "Comisaría La Huayrona",
+      "Latitud": -11.9938632058037,
+      "Longitud": -77.006949117883
+     },
+     {
+      "Nombre": "Comisaría Mariscal Cáceres",
+      "Latitud": -11.9489848567737,
+      "Longitud": -76.9810006176861
+     },
+     {
+      "Nombre": "Comisaría Caja de Agua",
+      "Latitud": -12.0269258830717,
+      "Longitud": -77.0151489319717
+     },
+     {
+      "Nombre": "Comisaría Canto Rey",
+      "Latitud": -11.9756895757109,
+      "Longitud": -76.9955680452738
+     },
+     {
+      "Nombre": "Comisaría 10 de Octubre",
+      "Latitud": -11.9444366603739,
+      "Longitud": -76.9883872753492
+     }
+    ]
+    }

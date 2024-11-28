@@ -1,0 +1,293 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.98450475150835,
+                    -12.016833069228309,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Mercado Mangomarca",
+                "ubicacion": "https://maps.app.goo.gl/V5bTU8qTu4qarMCb7",
+                "jurisdiccion": "ZARATE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.96168754233022,
+                    -12.018778361128147,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Calle 8 de Campoy",
+                "ubicacion": "https://maps.app.goo.gl/84rhHMvJYqTe4Vhz6",
+                "jurisdiccion": "ZARATE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.99846045766975,
+                    -12.02504591160355,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Mercado Vara de Oro",
+                "ubicacion": "https://maps.app.goo.gl/zZ5xZW8f4SJ9Mh6T9",
+                "jurisdiccion": "ZARATE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.01075589815585,
+                    -12.030124436858253,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Cuadra 1 de Chimu",
+                "ubicacion": "https://maps.app.goo.gl/qePHb9oNFRn1RqVHA",
+                "jurisdiccion": "ZARATE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.99099737300928,
+                    -12.021084869146096,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Av. Las Lomas 642",
+                "ubicacion": "https://maps.app.goo.gl/JfsQJXidj5Ho6xSf9",
+                "jurisdiccion": "ZARATE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.9956792846605,
+                    -12.019003399464301,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Av. Santuario 1063",
+                "ubicacion": "https://maps.app.goo.gl/sR1Z8SmF9c8hwW8L7",
+                "jurisdiccion": "ZARATE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.99113245766975,
+                    -12.021234362804217,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Av. Las Lomas 87",
+                "ubicacion": "https://maps.app.goo.gl/F323SZBFAS4CSCqn7",
+                "jurisdiccion": "ZARATE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.01149481349536,
+                    -12.028126394386309,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Caja de agua",
+                "ubicacion": "https://maps.app.goo.gl/d6NoGneDFxFtueHJ8",
+                "jurisdiccion": "CAJA DE AGUA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.00981545766977,
+                    -11.99968737055424,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Mercado San Hilari\u00f3n",
+                "ubicacion": "https://maps.app.goo.gl/wmZK2mRMXML3WMDp6",
+                "jurisdiccion": "HUAYRONA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.00638327962899,
+                    -12.00590557576039,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Av. Jardines",
+                "ubicacion": "https://maps.app.goo.gl/Fa9fHFJJGpUCw9tu6",
+                "jurisdiccion": "HUAYRONA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.99989791533953,
+                    -11.975317836187214,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Alameda Canto Rey",
+                "ubicacion": "https://maps.app.goo.gl/PfH9eKXuHZdBRmnf9",
+                "jurisdiccion": "CANTO REY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.99383427116511,
+                    -11.968653362233843,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Santa Rosa con Wiesse",
+                "ubicacion": "https://maps.app.goo.gl/tPZq8bcAqkDaMvBf9",
+                "jurisdiccion": "CANTO REY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.00250845766976,
+                    -11.966578873159559,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Chonta",
+                "ubicacion": "https://maps.app.goo.gl/DhJGToWPTpJydPRE9",
+                "jurisdiccion": "SANTA ELIZABETH"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.992402,
+                    -11.970726328403531,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Santa Rosa",
+                "ubicacion": "https://maps.app.goo.gl/imgh1xZZ2zcLbtHRA",
+                "jurisdiccion": "SANTA ELIZABETH"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.00214018650463,
+                    -11.974415358681018,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Metro de 8",
+                "ubicacion": "https://maps.app.goo.gl/bD1TfxpE452JVJhz5",
+                "jurisdiccion": "SANTA ELIZABETH"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.99138208466047,
+                    -11.929929832667302,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Mercado Trebol",
+                "ubicacion": "https://maps.app.goo.gl/yi1u5RPWGkM7RBsV9 ",
+                "jurisdiccion": "10 DE OCTUBRE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.00321891533952,
+                    -11.981776345744517,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "I.E Pamer",
+                "ubicacion": "https://maps.app.goo.gl/UtYuCVxAZQVqmTLe6",
+                "jurisdiccion": "CANTO REY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.99285872883488,
+                    -11.97592234130797,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Psje. El Rosario",
+                "ubicacion": "https://maps.app.goo.gl/Qcagq2bg2F5myjUb9",
+                "jurisdiccion": "CANTO REY"
+            }
+        }
+    ]
+}

@@ -1,0 +1,208 @@
+{
+    "data":[
+     {
+      "Modulos": "Aguila 1",
+      "Latitud": -12.0322647,
+      "Longitud": -77.0118816,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Modulo 10 de las Flores",
+      "Latitud": -12.007988,
+      "Longitud": -77.01066,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Modulo Azcarruz",
+      "Latitud": -12.018196,
+      "Longitud": -77.0024852,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Modulo Santa Rosa",
+      "Latitud": -12.002594,
+      "Longitud": -76.998826,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Modulo San Martín",
+      "Latitud": -11.968365,
+      "Longitud": -77.00353,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Modulo Huascar",
+      "Latitud": -11.964168,
+      "Longitud": -77.010592,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Modulo Hangar",
+      "Latitud": -11.958652,
+      "Longitud": -76.998955,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Modulo Hiroito",
+      "Latitud": -11.955767,
+      "Longitud": -76.991624,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Modulo Monteverde",
+      "Latitud": -11.934675,
+      "Longitud": -76.969492,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Modulo 28 de Julio",
+      "Latitud": -12.021888,
+      "Longitud": -76.97843,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Modulo Villa mujer",
+      "Latitud": -12.010478,
+      "Longitud": -76.965648,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Modulo los Sauces",
+      "Latitud": -12.008445,
+      "Longitud": -76.98935,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Modulo Canto Sol",
+      "Latitud": -11.975052,
+      "Longitud": -77.011355,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Modulo Periodista",
+      "Latitud": -11.9738,
+      "Longitud": -77.01028,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Modulo Palmeras",
+      "Latitud": -11.98043,
+      "Longitud": -76.99219,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Módulo juan Pablo II",
+      "Latitud": -11.97973,
+      "Longitud": -76.98787,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Módulo Polonia",
+      "Latitud": -11.960163,
+      "Longitud": -76.991392,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Módulo Cangallo",
+      "Latitud": -11.935896,
+      "Longitud": -76.965153,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Módulo Flor de oliva",
+      "Latitud": -11.93228,
+      "Longitud": -76.970427,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Módulo Fragatas",
+      "Latitud": -11.966879,
+      "Longitud": -76.983024,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Módulo Mangomarca",
+      "Latitud": -12.01179,
+      "Longitud": -76.97973,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Módulo Perú - Japón",
+      "Latitud": -12.0040194977143,
+      "Longitud": -77.0056102497692,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Modulo Pampom",
+      "Latitud": -11.976416439211,
+      "Longitud": -76.9963265834772,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Modulo 8 de Canto Grande",
+      "Latitud": -11.9699064195009,
+      "Longitud": -77.0062080969466,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Modulo Electra",
+      "Latitud": -11.9514559087669,
+      "Longitud": -76.98791037062,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Modulo Pileta Unión",
+      "Latitud": -11.9647531866327,
+      "Longitud": -76.991316034378,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Módulo Huanta",
+      "Latitud": -11.9406192673317,
+      "Longitud": -76.980960804723,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Módulo Turístico",
+      "Latitud": -11.9351575076025,
+      "Longitud": -76.9676361063996,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Modulo Motupe",
+      "Latitud": -11.9405137791455,
+      "Longitud": -76.9756083355508,
+      "Tipo": "tipo1"
+     },
+     {
+      "Modulos": "Módulo Amautas",
+      "Latitud": -11.9486211916425,
+      "Longitud": -77.0066553172696,
+      "Tipo": "tipo2"
+     },
+     {
+      "Modulos": "Siglo XXI",
+      "Latitud": -12.0066187420313,
+      "Longitud": -77.0056961304679,
+      "Tipo": "tipo2"
+     },
+     {
+      "Modulos": "CECOM",
+      "Latitud": -12.0128330618495,
+      "Longitud": -76.9960599199278,
+      "Tipo": "tipo2"
+     },
+     {
+      "Modulos": "Palacio Municipal San Juan de Lurigancho",
+      "Latitud": -12.0294783777616,
+      "Longitud": -77.0101535015394,
+      "Tipo": "tipo3"
+     },
+     {
+      "Modulos": "Agencia municipal canto grande",
+      "Latitud": -11.9722971204178,
+      "Longitud": -77.0050856864922,
+      "Tipo": "tipo2"
+     }
+    ]
+    }

@@ -1,0 +1,965 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.96562781349536,
+                    -12.010238909507807,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Villa mujer",
+                "ubicacion": "https://maps.app.goo.gl/G6WpGT98G8X1akgf9",
+                "jurisdiccion": "ZARATE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.010547,
+                    -12.029723368600042,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Palacio municipal",
+                "ubicacion": "https://maps.app.goo.gl/9vxv1yEDZAqWRFfa7",
+                "jurisdiccion": "ZARATE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.99989545766975,
+                    -12.022999935736493,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Biblioteca municipal",
+                "ubicacion": "https://maps.app.goo.gl/8XLDm8eECQ9CgsPf7",
+                "jurisdiccion": "ZARATE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.9961559153395,
+                    -12.01256235688763,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Cecom",
+                "ubicacion": "https://maps.app.goo.gl/nFo6WWXgejt3U5pFA",
+                "jurisdiccion": "ZARATE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.00502416932098,
+                    -12.020561413744371,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Teatro Municipal",
+                "ubicacion": "https://maps.app.goo.gl/5YKz7rrujJwpT5iR9",
+                "jurisdiccion": "ZARATE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.96704572883488,
+                    -12.023154403268691,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Plaza de armas de Campoy",
+                "ubicacion": "https://maps.app.goo.gl/J8LZdwRBhsgXvoAb8",
+                "jurisdiccion": "ZARATE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.96640637300928,
+                    -12.024559391394087,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Ramiro Priale",
+                "ubicacion": "https://maps.app.goo.gl/F99ZsTn3HNk5i3EA9",
+                "jurisdiccion": "ZARATE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.96448762699072,
+                    -12.011901392958322,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Parque Chalan",
+                "ubicacion": "https://maps.app.goo.gl/jPzX4tXhUvwr95nc8",
+                "jurisdiccion": "ZARATE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.99899191533952,
+                    -12.02537589869188,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Parque \u00d1ustas",
+                "ubicacion": "https://maps.app.goo.gl/Nfc3dLEhTAHZTEe49",
+                "jurisdiccion": "ZARATE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.98528172883488,
+                    -12.022774870365524,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Parque Framauro",
+                "ubicacion": "https://maps.app.goo.gl/Eu1YFwRjfnu7CPdN9",
+                "jurisdiccion": "ZARATE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.99778835582559,
+                    -12.014324901360816,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Parque Bello Horizonte",
+                "ubicacion": "https://maps.app.goo.gl/KAopcgnP7uyUwYxq6",
+                "jurisdiccion": "ZARATE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.01032918650463,
+                    -12.027830874014668,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Alameda Palestina",
+                "ubicacion": "https://maps.app.goo.gl/s9htMRX5F9TSrocr7",
+                "jurisdiccion": "ZARATE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.99297,
+                    -12.026491366392934,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Puente Colgante",
+                "ubicacion": "https://maps.app.goo.gl/abCsJS12Mxyr9XKw6",
+                "jurisdiccion": "ZARATE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.01311618650465,
+                    -12.03659188034149,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Puente Hu\u00e1scar",
+                "ubicacion": "https://maps.app.goo.gl/74MGMRWuiMD4JvJbA",
+                "jurisdiccion": "CAJA DE AGUA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.02022454233023,
+                    -12.026521339793566,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Loza 49",
+                "ubicacion": "https://maps.app.goo.gl/9ETpyEwk3qeBarqo9",
+                "jurisdiccion": "CAJA DE AGUA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.01641691533953,
+                    -12.02564236581325,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Pasaje cabo blanco",
+                "ubicacion": "https://maps.app.goo.gl/DtFLm6b7YJw66ME27",
+                "jurisdiccion": "CAJA DE AGUA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.0147550846605,
+                    -12.02882491521612,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Vivero Caja de Agua",
+                "ubicacion": "https://maps.app.goo.gl/rSk7DWCRZeSUzMen7",
+                "jurisdiccion": "CAJA DE AGUA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.01908745766977,
+                    -12.028236860862325,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Parque Espa\u00f1a",
+                "ubicacion": "https://maps.app.goo.gl/QUZYiR3nhNyrvrBm8",
+                "jurisdiccion": "CAJA DE AGUA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.01196218650462,
+                    -12.024020897502503,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Parque Invierno",
+                "ubicacion": "https://maps.app.goo.gl/bKYn9z7eTfzTZpqs6",
+                "jurisdiccion": "CAJA DE AGUA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.0189832711651,
+                    -12.029077888427638,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Tunel Santa Rosa",
+                "ubicacion": "https://maps.app.goo.gl/ag3XhNHD3qKSb13n7",
+                "jurisdiccion": "CAJA DE AGUA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.00720981349536,
+                    -11.986376359418648,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Pasaje San Carlos",
+                "ubicacion": "https://maps.app.goo.gl/fD2kd8zeFapAFVGt7",
+                "jurisdiccion": "HUAYRONA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.01094054233023,
+                    -11.989239846199967,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Parque no mataras",
+                "ubicacion": "https://maps.app.goo.gl/qGzAtmJQfjgo7JMe6",
+                "jurisdiccion": "HUAYRONA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.00842772883487,
+                    -12.006716917647132,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Tambo Jardines Oeste",
+                "ubicacion": "https://maps.app.goo.gl/igm3usBaWWxpyEmC9",
+                "jurisdiccion": "HUAYRONA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.01159972883487,
+                    -11.993730849432351,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Alameda San Hilari\u00f3n",
+                "ubicacion": "https://maps.app.goo.gl/7Mnd4ZD1kwueBoXY8",
+                "jurisdiccion": "HUAYRONA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.00248445766975,
+                    -12.010676403918135,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Puerta Vehicular",
+                "ubicacion": "https://maps.app.goo.gl/PJ8Re48Vpf1JFazA8",
+                "jurisdiccion": "HUAYRONA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.00232445766977,
+                    -12.010972898160187,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Puerta Peatonal",
+                "ubicacion": "https://maps.app.goo.gl/aJhpHf8QpJxvUHB19",
+                "jurisdiccion": "HUAYRONA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.00536699999999,
+                    -12.005550363783971,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Ciclovia Jardines",
+                "ubicacion": "https://maps.app.goo.gl/oiRV6EyudTbnpRfV6",
+                "jurisdiccion": "HUAYRONA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.0065229153395,
+                    -11.988175866087165,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Polideportivo San Carlos",
+                "ubicacion": "https://maps.app.goo.gl/5RT9G2w5acRNAQu16",
+                "jurisdiccion": "HUAYRONA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.00210254233023,
+                    -12.010576885709064,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Estaci\u00f3n Wuiracocha",
+                "ubicacion": "https://maps.app.goo.gl/gkj39vWBt8sqHmL36",
+                "jurisdiccion": "HUAYRONA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.01439281349536,
+                    -12.002418407155231,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Casa del adulto mayor (CIAM)",
+                "ubicacion": "https://maps.app.goo.gl/jdy1aEj1RHs69N156",
+                "jurisdiccion": "HUAYRONA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.99943656869202,
+                    -11.990339345152837,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "AV. Santa Rosa - La Roca",
+                "ubicacion": "https://maps.app.goo.gl/jeV4oJhDjFqBgNAQ9",
+                "jurisdiccion": "HUAYRONA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.01696791533952,
+                    -12.002323878475748,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Huaca de Canto Chico",
+                "ubicacion": "https://maps.app.goo.gl/6P6vBKV1EKyorAfS6",
+                "jurisdiccion": "HUAYRONA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.00980427116511,
+                    -11.999759876229525,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Pelitres",
+                "ubicacion": "https://maps.app.goo.gl/bJzQ8F2xg1j7gzB9A",
+                "jurisdiccion": "HUAYRONA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.0022616441744,
+                    -12.010618897822223,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Fenix",
+                "ubicacion": "https://maps.app.goo.gl/AYhgJStX3rzAj3hN8",
+                "jurisdiccion": "HUAYRONA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.98787562699071,
+                    -11.966427847071797,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Casa del Halcon",
+                "ubicacion": "https://maps.app.goo.gl/tz53JyYktoBpMRpBA",
+                "jurisdiccion": "CANTO REY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.99086327116511,
+                    -11.97070582390682,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Sub prefactura",
+                "ubicacion": "https://maps.app.goo.gl/Tizg64SXe4z3eywD7",
+                "jurisdiccion": "CANTO REY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.99741916932095,
+                    -11.974968331287243,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Parque N\u00b02 \"La Uni\u00f3n\"",
+                "ubicacion": "https://maps.app.goo.gl/hSVbAE7hYqXe8cHb9",
+                "jurisdiccion": "CANTO REY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.987701,
+                    -11.967364326118762,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Parque Cocharcas",
+                "ubicacion": "https://maps.app.goo.gl/sRghhcFtGWf6SJtUA",
+                "jurisdiccion": "CANTO REY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.98573881349536,
+                    -11.963892349077762,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Parque Heraldos",
+                "ubicacion": "https://maps.app.goo.gl/hAhbyBmr1ibfyPTcA",
+                "jurisdiccion": "CANTO REY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.99866735582562,
+                    -11.958108847799897,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Tranquera Hangar",
+                "ubicacion": "https://maps.app.goo.gl/K9aGziBN6TY2Bdg78",
+                "jurisdiccion": "SANTA ELIZABETH"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.00484,
+                    -11.972548815980494,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Agencia Municipal",
+                "ubicacion": "https://maps.app.goo.gl/qQqXNFxVppKjCvg77",
+                "jurisdiccion": "SANTA ELIZABETH"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.99194310184414,
+                    -11.955198852802765,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Parque Heroito",
+                "ubicacion": "https://maps.app.goo.gl/wqKVicsLXwznjKE97",
+                "jurisdiccion": "BAYOVAR"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.99285672883488,
+                    -11.955787814352632,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Mercado Uni\u00f3n",
+                "ubicacion": "https://maps.app.goo.gl/yEJKqzMvikb74N3u5",
+                "jurisdiccion": "BAYOVAR"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.9873940846605,
+                    -11.950606833260073,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Tranquera Elektra",
+                "ubicacion": "https://maps.app.goo.gl/AUgqMNDu1GrQV8dR6",
+                "jurisdiccion": "BAYOVAR"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.98857108466048,
+                    -11.952153834609808,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Parque Pedro Osma",
+                "ubicacion": "https://maps.app.goo.gl/ST8w5KJn5BTVRbkE8",
+                "jurisdiccion": "BAYOVAR"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.99009508466047,
+                    -11.951822834320991,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Parque Los Rosales",
+                "ubicacion": "https://maps.app.goo.gl/eWG7qXhMLxmN1VxF8",
+                "jurisdiccion": "BAYOVAR"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.98530437300927,
+                    -11.940970328187966,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Concha Acustica",
+                "ubicacion": "https://maps.app.goo.gl/2mehPrGQ1CBwnArWA",
+                "jurisdiccion": "10 DE OCTUBRE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.98760054233024,
+                    -11.95055280360251,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Alameda Somos Libres",
+                "ubicacion": "https://maps.app.goo.gl/wFGJ6BH3JkEa6DrU9",
+                "jurisdiccion": "10 DE OCTUBRE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.985254,
+                    -11.947845830851564,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Alameda Fernando Wiesse",
+                "ubicacion": "https://maps.app.goo.gl/ZBQEq6jU8o5m72Ga6",
+                "jurisdiccion": "10 DE OCTUBRE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.98562444048608,
+                    -11.948774328027683,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "4 de Fernando Wiesse",
+                "ubicacion": "https://maps.app.goo.gl/esPR2b8PhUk6Fx1KA",
+                "jurisdiccion": "10 DE OCTUBRE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.97780381349536,
+                    -11.940754341288796,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Huellitas",
+                "ubicacion": "https://maps.app.goo.gl/e5Bf8qzgnEtfm66w8",
+                "jurisdiccion": "MARISCAL CACERES"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.98074,
+                    -11.94972133615847,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Parque placa",
+                "ubicacion": "https://maps.app.goo.gl/4Cs9p1NimuC9N32w7",
+                "jurisdiccion": "MARISCAL CACERES"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.98407408466048,
+                    -11.953919309325947,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Parque la identidad",
+                "ubicacion": "https://maps.app.goo.gl/CKKbAgN7Kax2aZND6",
+                "jurisdiccion": "MARISCAL CACERES"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.97054772883487,
+                    -11.937170311993025,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Parque Enrique Montenegro",
+                "ubicacion": "https://maps.app.goo.gl/xBJZt4raGmiAeTE97",
+                "jurisdiccion": "MARISCAL CACERES"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.98320172883489,
+                    -11.945149318021308,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Skate Park",
+                "ubicacion": "https://maps.app.goo.gl/Dk5QRuR7FxjNax7H9",
+                "jurisdiccion": "MARISCAL CACERES"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.01446018650464,
+                    -11.998732358606945,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Av. Los Postes con Av. Las Flores",
+                "ubicacion": "https://maps.app.goo.gl/bxGhg9R7JsWQM2dn7",
+                "jurisdiccion": "HUAYRONA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.00307518650463,
+                    -12.009444378724403,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Parque Wiracocha",
+                "ubicacion": "https://maps.app.goo.gl/jppB2EXbc3DVJEF69",
+                "jurisdiccion": "HUAYRONA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.012033,
+                    -12.03208387708544,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Base Sur ",
+                "ubicacion": "https://maps.app.goo.gl/jPJty8MMucdifALK6",
+                "jurisdiccion": "ZARATE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.00942618650464,
+                    -12.010680922048648,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Parque La Primera",
+                "ubicacion": "https://maps.app.goo.gl/6LEbbXLks5pto3o56",
+                "jurisdiccion": "HUAYRONA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.00445747608997,
+                    -12.011696482095024,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Parque Medalla Milagrosa",
+                "ubicacion": "https://maps.app.goo.gl/UgLoaVojXWQPpfT1A",
+                "jurisdiccion": "HUAYRONA"
+            }
+        }
+    ]
+}
