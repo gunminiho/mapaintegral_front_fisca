@@ -53,13 +53,13 @@ const CelularesSlice = createSlice({
                     (inactiveTime.type === 'hours' && inactiveTime.value >= 1) ||
                     (inactiveTime.type === 'days' && inactiveTime.value >= 1);
 
-                if (isInactive && celular.turno === currentTurn.label) {
+                if (isInactive && celular.turno.toLowerCase() === currentTurn.label.toLowerCase()) {
                     sinSeñalCount++;
                 }
-                return celular.turno === currentTurn.label;
+                return celular.turno.toLowerCase() === currentTurn.label.toLowerCase();
 
             });
-            
+
 
             state.celulares = celulares;
             state.celularesSinSenal = withTurn;
