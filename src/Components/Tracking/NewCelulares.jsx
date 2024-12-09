@@ -41,7 +41,7 @@ const Celulares = ({ itemsFiltros, setItemsFiltros }) => {
                 if (checked) return true; 
     
                 // Filtrar por atributo si el filtro está desactivado
-                return !valorFiltro.includes(celular[atributo]);
+                return !valorFiltro.map(v => v.toLowerCase()).includes(celular[atributo].toLowerCase());
             }));
     
         dispatch(setCelularesFiltered(filtered));
