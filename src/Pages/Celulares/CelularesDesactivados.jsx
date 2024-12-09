@@ -88,8 +88,8 @@ const CelularesDesactivados = () => {
                     <h1 className='text-3xl font-bold text-slate-600'>Celulares Desactivados</h1>
                 </Link>
             </div>
-            <main>
-                <div className='bg-white shadow rounded-lg p-4'>
+            <main className='flex flex-1 w-full overflow-hidden'>
+                <div className='bg-white shadow rounded-lg p-4 flex flex-col flex-1 overflow-hidden'>
                     <div className='w-full flex justify-space-between pb-3'>
                         <div className='w-full flex items-center gap-2'>
                             <span className='text-gray-600'>Total de filas: <span id="rowCount" className='font-bold'>{sortedData ? sortedData.length : 0}</span></span>
@@ -113,102 +113,104 @@ const CelularesDesactivados = () => {
                             />
                         </FormControl>
                     </div>
-                    <div className='overflow-x-auto'>
-                        <Table size='small' >
-                            <TableHead className='bg-gray-200'>
-                                <TableRow>
-                                    <TableCell className='min-w-28'>
-                                        <TableSortLabel
-                                            active={orderBy === 'member'}
-                                            direction={orderBy === 'member' ? orderDirection : 'asc'}
-                                            onClick={() => handleSortRequest('member')}
-                                        >
-                                            ID
-                                        </TableSortLabel>
-                                    </TableCell>
-                                    <TableCell>
-                                        <TableSortLabel
-                                            active={orderBy === 'nombres'}
-                                            direction={orderBy === 'nombres' ? orderDirection : 'asc'}
-                                            onClick={() => handleSortRequest('nombres')}
-                                        >
-                                            Nombres
-                                        </TableSortLabel>
-                                    </TableCell>
-                                    <TableCell>
-                                        <TableSortLabel
-                                            active={orderBy === 'apellidos'}
-                                            direction={orderBy === 'apellidos' ? orderDirection : 'asc'}
-                                            onClick={() => handleSortRequest('apellidos')}
-                                        >
-                                            Apellidos
-                                        </TableSortLabel>
-                                    </TableCell>
-                                    <TableCell>
-                                        <TableSortLabel
-                                            active={orderBy === 'telefono'}
-                                            direction={orderBy === 'telefono' ? orderDirection : 'asc'}
-                                            onClick={() => handleSortRequest('telefono')}
-                                        >
-                                            Telefono
-                                        </TableSortLabel>
-                                    </TableCell>
-                                    <TableCell>
-                                        <TableSortLabel
-                                            active={orderBy === 'dni'}
-                                            direction={orderBy === 'dni' ? orderDirection : 'asc'}
-                                            onClick={() => handleSortRequest('dni')}
-                                        >
-                                            DNI
-                                        </TableSortLabel>
-                                    </TableCell>
-                                    <TableCell>
-                                        <TableSortLabel
-                                            active={orderBy === 'superior'}
-                                            direction={orderBy === 'superior' ? orderDirection : 'asc'}
-                                            onClick={() => handleSortRequest('superior')}
-                                        >
-                                            Superior
-                                        </TableSortLabel>
-                                    </TableCell>
-                                    <TableCell>
-                                        <TableSortLabel
-                                            active={orderBy === 'TurnoAsociado.nombre'}
-                                            direction={orderBy === 'TurnoAsociado.nombre' ? orderDirection : 'asc'}
-                                            onClick={() => handleSortRequest('TurnoAsociado.nombre')}
-                                        >
-                                            Turno
-                                        </TableSortLabel>
-                                    </TableCell>
-                                    <TableCell>Activar</TableCell>
-                                </TableRow>
-                            </TableHead>
-                            <TableBody>
-                                {!sortedData || sortedData.length === 0 ?
+                    <div className='overflow-auto flex flex-1 w-full'>
+                        <div className='w-full'>
+                            <Table size='small' >
+                                <TableHead className='bg-gray-200'>
                                     <TableRow>
-                                        <TableCell colSpan={8} style={{ textAlign: 'center' }}>
-                                            No hay celulares desactivados
+                                        <TableCell className='min-w-28'>
+                                            <TableSortLabel
+                                                active={orderBy === 'member'}
+                                                direction={orderBy === 'member' ? orderDirection : 'asc'}
+                                                onClick={() => handleSortRequest('member')}
+                                            >
+                                                ID
+                                            </TableSortLabel>
                                         </TableCell>
+                                        <TableCell>
+                                            <TableSortLabel
+                                                active={orderBy === 'nombres'}
+                                                direction={orderBy === 'nombres' ? orderDirection : 'asc'}
+                                                onClick={() => handleSortRequest('nombres')}
+                                            >
+                                                Nombres
+                                            </TableSortLabel>
+                                        </TableCell>
+                                        <TableCell>
+                                            <TableSortLabel
+                                                active={orderBy === 'apellidos'}
+                                                direction={orderBy === 'apellidos' ? orderDirection : 'asc'}
+                                                onClick={() => handleSortRequest('apellidos')}
+                                            >
+                                                Apellidos
+                                            </TableSortLabel>
+                                        </TableCell>
+                                        <TableCell>
+                                            <TableSortLabel
+                                                active={orderBy === 'telefono'}
+                                                direction={orderBy === 'telefono' ? orderDirection : 'asc'}
+                                                onClick={() => handleSortRequest('telefono')}
+                                            >
+                                                Telefono
+                                            </TableSortLabel>
+                                        </TableCell>
+                                        <TableCell>
+                                            <TableSortLabel
+                                                active={orderBy === 'dni'}
+                                                direction={orderBy === 'dni' ? orderDirection : 'asc'}
+                                                onClick={() => handleSortRequest('dni')}
+                                            >
+                                                DNI
+                                            </TableSortLabel>
+                                        </TableCell>
+                                        <TableCell>
+                                            <TableSortLabel
+                                                active={orderBy === 'superior'}
+                                                direction={orderBy === 'superior' ? orderDirection : 'asc'}
+                                                onClick={() => handleSortRequest('superior')}
+                                            >
+                                                Superior
+                                            </TableSortLabel>
+                                        </TableCell>
+                                        <TableCell>
+                                            <TableSortLabel
+                                                active={orderBy === 'TurnoAsociado.nombre'}
+                                                direction={orderBy === 'TurnoAsociado.nombre' ? orderDirection : 'asc'}
+                                                onClick={() => handleSortRequest('TurnoAsociado.nombre')}
+                                            >
+                                                Turno
+                                            </TableSortLabel>
+                                        </TableCell>
+                                        <TableCell>Activar</TableCell>
                                     </TableRow>
-                                    :
-                                    sortedData?.map((celular) => (
-                                        <TableRow key={celular.id}>
-                                            <TableCell>{celular.member}</TableCell>
-                                            <TableCell>{celular.nombres}</TableCell>
-                                            <TableCell>{celular.apellidos}</TableCell>
-                                            <TableCell>{celular.telefono}</TableCell>
-                                            <TableCell>{celular.dni}</TableCell>
-                                            <TableCell>{celular.superior}</TableCell>
-                                            <TableCell>{celular.TurnoAsociado.nombre}</TableCell>
-                                            <TableCell>
-                                                <IconButton variant="contained" color="success" size='small' onClick={() => onAccept(celular.member)} >
-                                                    <CheckRoundedIcon />
-                                                </IconButton>
+                                </TableHead>
+                                <TableBody>
+                                    {!sortedData || sortedData.length === 0 ?
+                                        <TableRow>
+                                            <TableCell colSpan={8} style={{ textAlign: 'center' }}>
+                                                No hay celulares desactivados
                                             </TableCell>
                                         </TableRow>
-                                    ))}
-                            </TableBody>
-                        </Table>
+                                        :
+                                        sortedData?.map((celular) => (
+                                            <TableRow key={celular.id}>
+                                                <TableCell>{celular.member}</TableCell>
+                                                <TableCell>{celular.nombres}</TableCell>
+                                                <TableCell>{celular.apellidos}</TableCell>
+                                                <TableCell>{celular.telefono}</TableCell>
+                                                <TableCell>{celular.dni}</TableCell>
+                                                <TableCell>{celular.superior}</TableCell>
+                                                <TableCell>{celular.TurnoAsociado.nombre}</TableCell>
+                                                <TableCell>
+                                                    <IconButton variant="contained" color="success" size='small' onClick={() => onAccept(celular.member)} >
+                                                        <CheckRoundedIcon />
+                                                    </IconButton>
+                                                </TableCell>
+                                            </TableRow>
+                                        ))}
+                                </TableBody>
+                            </Table>
+                        </div>
                     </div>
                 </div>
             </main>
