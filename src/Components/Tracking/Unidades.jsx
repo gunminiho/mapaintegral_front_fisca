@@ -49,28 +49,36 @@ const Unidades = ({ itemsFiltros, setItemsFiltros }) => {
     }, [unidades, itemsFiltros]);
 
 
+    const debounceTimerRef = useRef(null);
     useEffect(() => {
         if (isFollowed) {
-            const unidadSeguida = unidades.find(unit => unit._issi == issiFollowed);
+            const unidadSeguida = unidades.find(unit => unit._issi === issiFollowed);
             if (unidadSeguida) {
                 // Encontrar el marcador existente y abrir su popup
                 const marker = markersRef.current[unidadSeguida._issi];
                 if (marker) {
-                    CloseAllPopups(map)
+                    CloseAllPopups(map);
                     map.flyTo([unidadSeguida._longitud, unidadSeguida._latitud], 18, {
                         animate: true,
                         duration: 0.1
                     });
 
-                    setTimeout(() => {
+                    // Limpiar el debounce anterior si existe
+                    if (debounceTimerRef.current) {
+                        clearTimeout(debounceTimerRef.current);
+                    }
+
+                    // Establecer un nuevo debounce
+                    debounceTimerRef.current = setTimeout(() => {
                         // Verificar si el marcador está dentro de un clúster con la propiedad '_icon'
-                        if (marker._icon === undefined || marker._icon === null) {
-                            // Expande el clúster para mostrar los marcadores individuales
-                            marker.__parent.spiderfy();
+                        if (!marker._icon) {
+                            if (marker.__parent && typeof marker.__parent.spiderfy === 'function') {
+                                marker.__parent.spiderfy();
+                            }
                         }
 
                         marker.openPopup();
-                    }, 600);
+                    }, 600); // El tiempo de debounce puede ajustarse según lo necesites
                 }
             }
         }
