@@ -32,18 +32,38 @@ const Celulares = ({ itemsFiltros, setItemsFiltros }) => {
 
     useEffect(() => {
         const arrFiltros = itemsFiltros.find(item => item.id === 'celulares')?.items || [];
-    
+
+        // Calcular el estado para cada celular antes del filtrado
+        const celularesConEstado = celulares.map(celular => {
+            const { inactiveTime } = celular;
+            const isInactive =
+                (inactiveTime.type === 'minutes' && inactiveTime.value >= 5) ||
+                (inactiveTime.type === 'hours' && inactiveTime.value >= 1) ||
+                (inactiveTime.type === 'days' && inactiveTime.value >= 1);
+
+            return {
+                ...celular,
+                estado: isInactive ? 'Inactivo' : 'Activo',
+            };
+        });
+
         // Filtrar las celulares según los filtros
-        const filtered = arrFiltros.every(filtro => filtro.checked) 
-            ? celulares // Si todos los filtros están activados, mostrar todas las celulares
-            : celulares.filter(celular => arrFiltros.every(({ checked, atributo, valorFiltro }) => {
-                // Si el filtro está activado, permite que pase la celular                    
-                if (checked) return true; 
-    
-                // Filtrar por atributo si el filtro está desactivado
-                return !valorFiltro.map(v => v.toLowerCase()).includes(celular[atributo].toLowerCase());
-            }));
-    
+        const filtered = arrFiltros.every(filtro => filtro.checked)
+            ? celularesConEstado // Si todos los filtros están activados, mostrar todas las celulares
+            : celularesConEstado.filter(celular =>
+                arrFiltros.every(({ checked, atributo, valorFiltro }) => {
+                    if (checked) return true;
+
+                    if (atributo === "estado") {
+                        // Evaluar si el estado es Activo o Inactivo
+                        return !valorFiltro.includes(celular[atributo]);
+                    }
+
+                    const value = celular[atributo]?.toLowerCase?.() || "";
+                    return !valorFiltro.map(v => v.toLowerCase()).includes(value);
+                })
+            );
+
         dispatch(setCelularesFiltered(filtered));
     }, [celulares, itemsFiltros]);
 
@@ -51,11 +71,11 @@ const Celulares = ({ itemsFiltros, setItemsFiltros }) => {
         const checkAndMoveToMarker = () => {
             if (celularIsFollowed || id) {
                 const CeludarSeguido = celulares.find(cel => cel.id == celularFollowed || cel.id == id);
-    
-                if (CeludarSeguido) {   
+
+                if (CeludarSeguido) {
                     // Encontrar el marcador existente
                     const marker = markersRef.current[CeludarSeguido.id];
-    
+
                     if (marker) {
                         CloseAllPopups(map)
                         // Mover el mapa a la ubicación del marcador
@@ -69,7 +89,7 @@ const Celulares = ({ itemsFiltros, setItemsFiltros }) => {
                                 // Expande el clúster para mostrar los marcadores individuales
                                 marker.__parent.spiderfy();
                             }
-    
+
                             // Abrir el popup del marcador
                             marker.openPopup();
                         }, 600);
@@ -83,17 +103,17 @@ const Celulares = ({ itemsFiltros, setItemsFiltros }) => {
 
     UseCelulares()
 
-    const icon = L.icon({
-        iconUrl: celular,
-        iconSize: [30, 35],
-        iconAnchor: [15, 30],
-        popupAnchor: [0, -30],
-        shadowUrl: shadow,
-        shadowSize: [60, 45],
-        shadowAnchor: [15, 40],
-    });
+    // const icon = L.icon({
+    //     iconUrl: celular,
+    //     iconSize: [30, 35],
+    //     iconAnchor: [15, 30],
+    //     popupAnchor: [0, -30],
+    //     shadowUrl: shadow,
+    //     shadowSize: [60, 45],
+    //     shadowAnchor: [15, 40],
+    // });
 
-    const filterPhones = celularesFiltered || celulares
+    // const filterPhones = celularesFiltered || celulares
 
     return (
         <>
@@ -117,12 +137,41 @@ const Celulares = ({ itemsFiltros, setItemsFiltros }) => {
                 zoomToBoundsOnClick={false}
                 ref={clusterRef}
             >
-                {filterPhones && filterPhones.map((punto, index) => {
+                {celularesFiltered && celularesFiltered.map((punto, index) => {
                     const latitud = punto.position[0].latitude;
                     const longitud = punto.position[0].longitude;
 
-                    const { id, nombres, apellidos, dni, telefono, turno, superior, date } = punto
+                    const { id, nombres, apellidos, dni, telefono, turno, superior, date, estado } = punto
                     const pos = [latitud, longitud];
+                    const shadowColor = estado === 'Activo' ? '#04d62e' : '#ed0202'; // Verde para activo, rojo para inactivo
+
+
+                    const icon = L.divIcon({
+                        className: 'custom-marker',
+                        html: `
+                          <div style="
+                            position: relative;
+                            width: 30px;
+                            height: 35px;
+                          ">
+                            <img src="${celular}" alt="icon" style="width: 100%; height: 100%;" />
+                            <div style="
+                              position: absolute;
+                              width: 50%;
+                              height: 50%;
+                              background-color: ${shadowColor};
+                              border-radius: 50%;
+                              filter: blur(10px);
+                              z-index: -1;
+                              top: 10px;
+                              left: 10px;
+                            "></div>
+                          </div>
+                        `,
+                        iconSize: [30, 35],
+                        iconAnchor: [15, 30],
+                        popupAnchor: [0, -30],
+                    });
 
                     return (
                         <Marker
@@ -140,6 +189,7 @@ const Celulares = ({ itemsFiltros, setItemsFiltros }) => {
                                     <p className="text-sm text-gray-600"><strong>DNI:</strong> {dni || 'No disponible'}</p>
                                     <p className="text-sm text-gray-600"><strong>Superior:</strong> {superior || 'No disponible'}</p>
                                     <p className="text-sm text-gray-600"><strong>Turno:</strong> {turno || 'No disponible'}</p>
+                                    <p className="text-sm text-gray-600"><strong>Estado:</strong> {estado || 'No disponible'}</p>
                                     <p className="text-sm text-gray-600"><strong>Última actualización:</strong> {formatearFecha(date) || 'No disponible'}</p>
                                 </span>
                             </Popup>
@@ -168,6 +218,7 @@ const Celulares = ({ itemsFiltros, setItemsFiltros }) => {
                                 <TableCell style={{ backgroundColor: '#e5e7eb' }}>DNI</TableCell>
                                 <TableCell style={{ backgroundColor: '#e5e7eb' }}>Superior</TableCell>
                                 <TableCell style={{ backgroundColor: '#e5e7eb' }}>Turno</TableCell>
+                                <TableCell style={{ backgroundColor: '#e5e7eb' }}>Estado</TableCell>
                                 <TableCell style={{ backgroundColor: '#e5e7eb' }}>Fecha</TableCell>
                             </TableRow>
                         </TableHead>
@@ -176,7 +227,7 @@ const Celulares = ({ itemsFiltros, setItemsFiltros }) => {
                                 const latitud = punto.options.attribution.position[0].latitude;
                                 const longitud = punto.options.attribution.position[0].longitude;
 
-                                const { id, nombres, apellidos, dni, telefono, turno, superior, date } = punto.options.attribution
+                                const { id, nombres, apellidos, dni, telefono, turno, superior, date, estado } = punto.options.attribution
                                 const pos = [latitud, longitud];
 
                                 return (
@@ -186,6 +237,7 @@ const Celulares = ({ itemsFiltros, setItemsFiltros }) => {
                                         <TableCell className='text-nowrap'>{dni || '-'}</TableCell>
                                         <TableCell className='text-nowrap'>{superior || '-'}</TableCell>
                                         <TableCell className='text-nowrap'>{turno || '-'}</TableCell>
+                                        <TableCell className='text-nowrap'>{estado || '-'}</TableCell>
                                         <TableCell className='text-nowrap'>{formatearFecha(date) || '-'}</TableCell>
                                     </TableRow>
                                 )

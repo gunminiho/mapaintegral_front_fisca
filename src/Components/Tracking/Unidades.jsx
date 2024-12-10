@@ -5,14 +5,14 @@ import { Marker, Popup, useMap } from 'react-leaflet';
 import { LayersControl, LayerGroup } from 'react-leaflet';
 import L from 'leaflet'; // Importa Leaflet si no está importado
 import header from "../helpers/postHeaders";
-import { setResumen, setUnidadesFiltered, setUnits } from "../../redux/slices/unitsReducer";
 import { useSelector, useDispatch } from "react-redux";
 import MarkerClusterGroup from 'react-leaflet-cluster';
 import { socket } from "../Socket/socket";
 import CustomModal from "../Modal/CustomModal";
 import { Button, Table, TableBody, TableCell, TableHead, TableRow } from "@mui/material";
 import { CloseAllPopups } from "../helpers/Functions";
-// import { socket } from "../Socket/socket";
+import { setIsFollowed, setIssiFollowed, setResumen, setUnidadesFiltered, setUnits } from "../../redux/slices/unitsReducer";
+import { handleCloseToast, showToast } from "../../redux/slices/toastsSlice";
 
 const { Overlay } = LayersControl;
 
@@ -26,6 +26,8 @@ const Unidades = ({ itemsFiltros, setItemsFiltros }) => {
     const clusterRef = useRef(null);
     const [isOpenModal, setisOpenModal] = useState(false)
     const [SelectedMarkers, setSelectedMarkers] = useState([])
+    const { toasts, isListening } = useSelector((state) => state.toasts);
+    const toastsRef = useRef(toasts);
 
     useEffect(() => {
         const arrFiltros = itemsFiltros.find(item => item.id === 'unidades')?.items || [];
@@ -119,6 +121,57 @@ const Unidades = ({ itemsFiltros, setItemsFiltros }) => {
     }
 
     const filterUnits = unidadesFiltered || unidades
+
+    const onFollowPoint = (id) => {
+        dispatch(setIssiFollowed(id));
+        dispatch(setIsFollowed(true));
+        setTimeout(() => {
+            dispatch(setIsFollowed(false));
+        }, 5000);
+    }
+    useEffect(() => {
+        toastsRef.current = toasts
+    }, [toasts])
+    const speedViolationCounts = useRef({});
+    
+    useEffect(() => {
+        if (Array.isArray(filterUnits) && isListening) {
+            filterUnits.forEach((unit) => {
+                const toastArr = toastsRef.current;
+                const existingToast = toastArr.find((toast) => toast.id === unit._issi);
+                if (
+                    unit._estado === 'NORMAL' &&
+                    unit._velocidad > 30 &&
+                    unit._velocidad < 150 &&
+                    unit._placa
+                ) {
+                    // Incrementar el contador de violaciones
+                    speedViolationCounts.current[unit._issi] = (speedViolationCounts.current[unit._issi] || 0) + 1;
+                    if (speedViolationCounts.current[unit._issi] > 3 && !existingToast) {
+                        dispatch(showToast({
+                            id: unit._issi,
+                            message: `La unidad ${unit._issi} sobrepasó le limite (${parseFloat(unit._velocidad).toFixed(2)} km/h)`,
+                            type: 'info',
+                            duration: null,
+                            vertical: 'top',
+                            horizontal: 'right',
+                            title: 'Límite de velocidad',
+                            onClick: () => onFollowPoint(unit._issi),
+                            cluster: 'velocidad',
+                        }));
+                    }
+                } else {
+                    // Reiniciar el contador si no cumple las condiciones
+                    if (speedViolationCounts.current[unit._issi]) {
+                        delete speedViolationCounts.current[unit._issi];
+                    }
+                    if (existingToast) {
+                        dispatch(handleCloseToast(unit._issi));
+                    }
+                }
+            });
+        }
+    }, [filterUnits]);
 
     return (
         <>

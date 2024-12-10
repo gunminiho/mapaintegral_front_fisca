@@ -25,6 +25,7 @@ import Celulares from "../Tracking/NewCelulares";
 import Sostenimiento from "../Graphics/Sostenimiento";
 import PuestosSeguridad from "../Graphics/PuestosSeguridad";
 import FiltersPopover from "../Popups/FiltersPopover";
+import Conteo_2 from '../Popups/ConteoCelular';
 
 const Map = () => {
     const position = [-11.977148, -76.996402]; // Coordenadas para SJL ,Lima, Perú
@@ -110,6 +111,20 @@ const Map = () => {
             id: "celulares",
             items: [
                 {
+                    label: "Activo",
+                    onClick: (id, label) => { handleCheckboxChange(id, label) },
+                    checked: true,
+                    atributo: "estado",
+                    valorFiltro: ["Activo"]
+                },
+                {
+                    label: "Inactivo",
+                    onClick: (id, label) => { handleCheckboxChange(id, label) },
+                    checked: true,
+                    atributo: "estado",
+                    valorFiltro: ["Inactivo"]
+                },
+                {
                     label: "Turno Mañana",
                     onClick: (id, label) => { handleCheckboxChange(id, label) },
                     checked: true,
@@ -139,14 +154,14 @@ const Map = () => {
         {
             title: 'Servicios',
             layers: [
-                { id: 'municipales', checked: false, label: 'C. Municipales', layer: Municipales, count: 0  },
-                { id: 'vecinales', checked: false, label: 'C. Vecinales', layer: Vecinales, count: 0  },
+                { id: 'municipales', checked: false, label: 'C. Municipales', layer: Municipales, count: 0 },
+                { id: 'vecinales', checked: false, label: 'C. Vecinales', layer: Vecinales, count: 0 },
                 // { id: 'transporteIncidencias', label: 'Transporte Incidencias', layer: TransporteIncidencias },
-                { id: 'ubicacionComisarias', checked: false, label: 'Ubicación de Comisarías', layer: Comisarias, count: 0  },
-                { id: 'paraderosTransporte', checked: false, label: 'Paraderos de Transporte', layer: Transporte, count: 0  },
-                { id: 'puntosBasura', checked: false, label: 'Puntos de Basura', layer: PuntosBasura, count: 0  },
-                { id: 'sostenimien', checked: false, label: 'Sostenimiento', layer: Sostenimiento, count: 0  },
-                { id: 'puestosSeguridad', checked: false, label: 'Puestos de Seguridad', layer: PuestosSeguridad, count: 0  },
+                { id: 'ubicacionComisarias', checked: false, label: 'Ubicación de Comisarías', layer: Comisarias, count: 0 },
+                { id: 'paraderosTransporte', checked: false, label: 'Paraderos de Transporte', layer: Transporte, count: 0 },
+                { id: 'puntosBasura', checked: false, label: 'Puntos de Basura', layer: PuntosBasura, count: 0 },
+                { id: 'sostenimien', checked: false, label: 'Sostenimiento', layer: Sostenimiento, count: 0 },
+                { id: 'puestosSeguridad', checked: false, label: 'Puestos de Seguridad', layer: PuestosSeguridad, count: 0 },
             ]
         },
         {
@@ -164,8 +179,8 @@ const Map = () => {
         {
             title: 'Puntos de Vigilancia',
             layers: [
-                { id: 'puntosImportantes', checked: false, label: 'Puntos Importantes', layer: PuntosImportantes, count: 0  },
-                { id: 'moduloSerenos', checked: false, label: 'Módulo de Serenos', layer: ModuloSerenos, count: 0  },
+                { id: 'puntosImportantes', checked: false, label: 'Puntos Importantes', layer: PuntosImportantes, count: 0 },
+                { id: 'moduloSerenos', checked: false, label: 'Módulo de Serenos', layer: ModuloSerenos, count: 0 },
             ]
         }
     ]);
@@ -251,6 +266,19 @@ const Map = () => {
         });
     }, []);
 
+    const isUnidadesChecked = useMemo(() => {
+        return layers.some((group) =>
+            group.layers.some((layer) => layer.id === 'unidades' && layer.checked)
+        );
+    }, [layers]);
+    const isCelularesChecked = useMemo(() => {
+        return layers.some((group) =>
+            group.layers.some((layer) => layer.id === 'celulares' && layer.checked)
+        );
+    }, [layers]);
+
+
+
     const updateLayerCount = useCallback((id, count) => {
         setLayers((prevLayers) =>
             prevLayers.map((section) => ({
@@ -266,11 +294,11 @@ const Map = () => {
         layers.map((layer) =>
             layer.layers.map((item) => {
                 return (
-                    item.checked && item.layer ? 
-                    item.id == "unidades" || "celulares" ? // Agregar a esta condición las capas en las que se aplicaran filtros
-                    <item.layer key={item.id} id={item.id} updateLayerCount={updateLayerCount} itemsFiltros={itemsFiltros} setItemsFiltros={setItemsFiltros}/> : 
-                    <item.layer key={item.id} id={item.id} updateLayerCount={updateLayerCount}  /> : 
-                    null
+                    item.checked && item.layer ?
+                        item.id == "unidades" || "celulares" ? // Agregar a esta condición las capas en las que se aplicaran filtros
+                            <item.layer key={item.id} id={item.id} updateLayerCount={updateLayerCount} itemsFiltros={itemsFiltros} setItemsFiltros={setItemsFiltros} /> :
+                            <item.layer key={item.id} id={item.id} updateLayerCount={updateLayerCount} /> :
+                        null
                 )
             })
         )
@@ -392,7 +420,8 @@ const Map = () => {
                 <Subsectores addLayer={addLayer} layers={layers} />
                 <Puntos addLayer={addLayer} removeAddedLayers={removeAddedLayers} layers={layers} />
                 <Cuadricula />
-                <Conteo />
+                {isUnidadesChecked && <Conteo />}
+                {isCelularesChecked && <Conteo_2 />}
                 < AlertsManager />
             </MapContainer >
 
