@@ -35,7 +35,7 @@ const Conteo = () => {
                             </thead>
                             <tbody >
                                 <tr className="border-t">
-                                    <td className="py-2 px-4 text-gray-700">Serenos</td>
+                                    <td className="py-2 px-4 text-gray-700">Fiscalizador</td>
                                     <td className="py-2 px-4 text-gray-700">{resumen?.PERSONA?.activo}</td>
                                     <td className="py-2 px-4 text-blue-700">Activos</td>
                                 </tr>
@@ -55,7 +55,7 @@ const Conteo = () => {
                                     <td className="py-2 px-4 text-blue-700">Activas</td>
                                 </tr>
                                 <tr className="border-t">
-                                    <td className="py-2 px-4 text-gray-700">Serenos</td>
+                                    <td className="py-2 px-4 text-gray-700">Fiscalizador</td>
                                     <td className="py-2 px-4 text-gray-700">{resumen?.PERSONA?.inactivo}</td>
                                     <td className="py-2 px-4 text-red-500">Inactivos</td>
                                 </tr>
