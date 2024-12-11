@@ -52,7 +52,7 @@ const Unidades = ({ itemsFiltros, setItemsFiltros }) => {
     const debounceTimerRef = useRef(null);
     useEffect(() => {
         if (isFollowed) {
-            const unidadSeguida = unidades.find(unit => unit._issi === issiFollowed);
+            const unidadSeguida = unidades.find(unit => unit._issi === parseInt(issiFollowed));
             if (unidadSeguida) {
                 // Encontrar el marcador existente y abrir su popup
                 const marker = markersRef.current[unidadSeguida._issi];
