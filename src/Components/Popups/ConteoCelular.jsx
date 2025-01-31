@@ -23,6 +23,7 @@ const ConteoCelular = () => {
         const { value, type } = inactiveTime;
         if (!value || !type) return true;
 
+
         let inactiveTimeInMinutes = 0;
         if (type.toLowerCase() === "days") {
             inactiveTimeInMinutes = value * 24 * 60;
@@ -40,12 +41,14 @@ const ConteoCelular = () => {
         const resumen = { activos: 0, inactivos: 0 };
         const totales = {};
 
+
         turnos.forEach((turno) => {
             const celularesTurno = celulares.filter(
                 (celular) => (celular.turno ?? "").toLowerCase().trim() === turno.toLowerCase().trim()
             );
             const activos = celularesTurno.filter(isActive).length;
             const inactivos = celularesTurno.length - activos;
+
 
             resumen.activos += activos;
             resumen.inactivos += inactivos;
@@ -59,6 +62,7 @@ const ConteoCelular = () => {
 
     // Memorizar cálculos
     const handleToggleDetails = () => setHideDetails(!hideDetails);
+
 
     return (
         <div className="absolute bottom-20 left-1 bg-white p-2 shadow-lg rounded-lg z-[999] font-bold transition-all">
@@ -133,4 +137,6 @@ const ConteoCelular = () => {
     );
 };
 
+
 export default ConteoCelular;
+
