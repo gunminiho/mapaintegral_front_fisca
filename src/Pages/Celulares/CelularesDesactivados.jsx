@@ -64,13 +64,13 @@ const CelularesDesactivados = () => {
     // Filtrar y ordenar los datos
     const filterCelular = (celular, searchTerm) => {
         return (
-            celular.member.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            celular.nombres.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            celular.apellidos.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            celular.telefono.toString().includes(searchTerm.toLowerCase()) ||
-            celular.dni.toString().includes(searchTerm.toLowerCase()) ||
-            celular.superior.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            celular.TurnoAsociado.nombre.toLowerCase().includes(searchTerm.toLowerCase())
+            celular.member?.toLowerCase().includes(searchTerm?.toLowerCase()) ||
+            celular.nombres?.toLowerCase().includes(searchTerm?.toLowerCase()) ||
+            celular.apellidos?.toLowerCase().includes(searchTerm?.toLowerCase()) ||
+            celular.telefono?.toString().includes(searchTerm?.toLowerCase()) ||
+            celular.dni?.toString().includes(searchTerm?.toLowerCase()) ||
+            celular.superior?.toLowerCase()?.includes(searchTerm?.toLowerCase()) ||
+            celular.TurnoAsociado?.nombre?.toLowerCase().includes(searchTerm?.toLowerCase())
         );
     };
 

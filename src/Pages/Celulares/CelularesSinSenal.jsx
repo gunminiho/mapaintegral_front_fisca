@@ -45,14 +45,14 @@ const CelularesSinSenal = () => {
     // Filtrar y ordenar los datos
     const filterCelular = (celular, searchTerm) => {
         return (
-            celular.id.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            celular.nombres.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            celular.apellidos.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            celular.telefono.toString().includes(searchTerm.toLowerCase()) ||
-            celular.dni.toString().includes(searchTerm.toLowerCase()) ||
-            celular.superior.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            celular.turno.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            celular.inactiveTime.label.toString().includes(searchTerm.toLowerCase())
+            celular.id?.toLowerCase().includes(searchTerm?.toLowerCase()) ||
+            celular.nombres?.toLowerCase().includes(searchTerm?.toLowerCase()) ||
+            celular.apellidos?.toLowerCase().includes(searchTerm?.toLowerCase()) ||
+            celular.telefono?.toString().includes(searchTerm?.toLowerCase()) ||
+            celular.dni?.toString().includes(searchTerm?.toLowerCase()) ||
+            celular.superior?.toLowerCase()?.includes(searchTerm?.toLowerCase()) ||
+            celular.turno?.toLowerCase().includes(searchTerm?.toLowerCase()) ||
+            celular.inactiveTime?.label?.toString().includes(searchTerm?.toLowerCase())
         );
     };
 

@@ -81,7 +81,7 @@ const Sidebar = ({ toggled, setToggled }) => {
                                 </div>
                                 <Menu menuItemStyles={menuItemStyles}>
                                     {item.children?.map((child) => (
-                                        child.children ? (
+                                        child?.children ? (
                                             <SubMenu key={child.id} label={child.label} icon={<child.icon />}>
                                                 {child.children.map((child) => (
                                                     <MenuItem key={child.id} component={<Link to={child.link} target={child.target} />}>

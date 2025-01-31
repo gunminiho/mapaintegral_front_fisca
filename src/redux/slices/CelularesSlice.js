@@ -19,7 +19,7 @@ const CelularesSlice = createSlice({
 
             const celulares = action.payload.map(celular => {
                 const inactiveTime = calculateInactiveTime(celular.date); // Llamamos a la función externa
-
+                
                 return {
                     ...celular,
                     inactiveTime // Agregamos el tiempo de inactividad como un nuevo atributo
@@ -46,20 +46,21 @@ const CelularesSlice = createSlice({
             });
 
             let sinSeñalCount = 0;
-            const withTurn = celulares.filter((celular) => {
-                const inactiveTime = calculateInactiveTime(celular.date); // Llamamos a la función externa
+            const withTurn = celulares?.filter((celular) => {
+                
+                const inactiveTime = calculateInactiveTime(celular?.date); // Llamamos a la función externa
                 const isInactive =
-                    (inactiveTime.type === 'minutes' && inactiveTime.value >= 5) ||
-                    (inactiveTime.type === 'hours' && inactiveTime.value >= 1) ||
-                    (inactiveTime.type === 'days' && inactiveTime.value >= 1);
-
-                if (isInactive && celular.turno.toLowerCase() === currentTurn.label.toLowerCase()) {
+                    (inactiveTime?.type === 'minutes' && inactiveTime?.value >= 1) ||
+                    (inactiveTime?.type === 'hours' && inactiveTime?.value >= 1) ||
+                    (inactiveTime?.type === 'days' && inactiveTime?.value >= 1);
+                    
+                if (isInactive && celular?.turno === currentTurn?.label) {
                     sinSeñalCount++;
                 }
-                return celular.turno.toLowerCase() === currentTurn.label.toLowerCase();
+                return celular?.turno === currentTurn?.label;
 
             });
-
+            
 
             state.celulares = celulares;
             state.celularesSinSenal = withTurn;

@@ -151,3 +151,28 @@ td {
   background-color: transparent !important;
 }
 
+.notGps{
+  position: relative;
+}
+.notGps::before{
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border: 2px solid red;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.notGps::after{
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background: red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}

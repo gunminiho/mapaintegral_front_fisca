@@ -26,8 +26,25 @@ import Sostenimiento from "../Graphics/Sostenimiento";
 import PuestosSeguridad from "../Graphics/PuestosSeguridad";
 import FiltersPopover from "../Popups/FiltersPopover";
 import Conteo_2 from '../Popups/ConteoCelular';
+import axios from "axios";
+
+const getTurnoActual = (horarios) => {
+    const ahora = new Date();
+    const horaActual = ahora.toTimeString().slice(0, 8); // 'HH:MM:SS'
+
+    return horarios.find(({ inicio, fin }) => {
+      if (inicio < fin) {
+        return horaActual >= inicio && horaActual < fin;
+      } else {
+        // Horarios que cruzan medianoche (Noche)
+        return horaActual >= inicio || horaActual < fin;
+      }
+    })?.turno || "Sin turno definido";
+};
 
 const Map = () => {
+    const turnoUrl = `${import.meta.env.VITE_URL_TAREAJE}/horarios/`;
+    
     const position = [-11.977148, -76.996402]; // Coordenadas para SJL ,Lima, Perú
     const BtnRef = useRef(null);
 
@@ -45,7 +62,7 @@ const Map = () => {
                 {
                     label: "Inactivos",
                     onClick: (id, label) => { handleCheckboxChange(id, label) },
-                    checked: true,
+                    checked: false,
                     atributo: "_color",
                     valorFiltro: ["rojo"]
                 },
@@ -120,34 +137,74 @@ const Map = () => {
                 {
                     label: "Inactivo",
                     onClick: (id, label) => { handleCheckboxChange(id, label) },
-                    checked: true,
+                    checked: false,
                     atributo: "estado",
                     valorFiltro: ["Inactivo"]
                 },
                 {
                     label: "Turno Mañana",
                     onClick: (id, label) => { handleCheckboxChange(id, label) },
-                    checked: true,
+                    checked: false,
                     atributo: "turno",
                     valorFiltro: ["Mañana"]
                 },
                 {
                     label: "Turno Tarde",
                     onClick: (id, label) => { handleCheckboxChange(id, label) },
-                    checked: true,
+                    checked: false,
                     atributo: "turno",
                     valorFiltro: ["Tarde"]
                 },
                 {
                     label: "Turno Noche",
                     onClick: (id, label) => { handleCheckboxChange(id, label) },
-                    checked: true,
+                    checked: false,
                     atributo: "turno",
                     valorFiltro: ["Noche"]
                 },
             ]
         }
     ]);
+
+    useEffect(() => {
+        const fetchTurno = async () => {
+          try {
+            const response = await axios.get(turnoUrl, {
+              headers: { 'x-api-key': import.meta.env.VITE_API_KEY_TAREAJE },
+            });
+
+            const res = response?.data?.data?.data || [];
+
+            const data = res
+              .filter(item => item.subgerencia.nombre === "Serenazgo" && item.area.nombre === "Operativo")
+              .map(item => ({ inicio: item.inicio, fin: item.fin, turno: item.turno.nombre }));
+
+            const turnoActual = getTurnoActual(data) || "Sin turno";
+
+            // Actualizar el grupo de "celulares"
+            setItemsFiltros(prevItems =>
+              prevItems.map(group => {
+                if (group.id === "celulares") {
+                  return {
+                    ...group,
+                    items: group.items.map(item => ({
+                      ...item,
+                      checked: item.valorFiltro.includes(turnoActual) || item.checked, // Mantener el valor si ya estaba true
+                    })),
+                  };
+                }
+                return group;
+              })
+            );
+
+          } catch (error) {
+            console.error("Error al obtener los turnos:", error);
+          }
+        };
+
+        fetchTurno();
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      }, []);
 
     const [OpenMenu, setOpenMenu] = useState(false)
     const [layers, setLayers] = useState([
